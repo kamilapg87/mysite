@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Теги</title>
+</head>
+<body>
+
+    <h1>Работа с HTML5-тегами</h1>
+
+    <h2>1. Аудио</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает тег audio.
+    </audio>
+
+    <h2>2. Видео</h2>
+    <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+
+    <h2>3. Графика (Canvas)</h2>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(20, 20, 150, 50);
+    </script>
+
+    <a href="main.html">Назад</a>
+
+</body>
+</html>
+
